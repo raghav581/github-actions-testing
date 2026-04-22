@@ -21,3 +21,8 @@ jobs:
         run: npm ci
       - name: Running actual Tests
         run: npm test
+  testing-print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print name
+        run: echo "Hello Raghav"
