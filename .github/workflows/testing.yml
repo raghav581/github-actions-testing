@@ -4,6 +4,9 @@ on:
 jobs:
   print:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: testingfolder
     steps:
       - name: Print name
         run: echo "Hello There, I am Raghav"
