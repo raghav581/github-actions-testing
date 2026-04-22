@@ -2,7 +2,8 @@ name: Print Name
 on:
   push:
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Print name
-      run: echo "Hello There, I am Raghav"
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print name
+        run: echo "Hello There, I am Raghav"
