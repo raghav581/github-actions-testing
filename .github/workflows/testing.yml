@@ -3,7 +3,7 @@ on:
   push:
 jobs:
   print:
-    runs-on: ubuntu-16.0
+    runs-on: ubuntu-latest
     steps:
       - name: Setup
         uses: actions/checkout@v4
