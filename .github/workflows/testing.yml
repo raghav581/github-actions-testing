@@ -3,13 +3,21 @@ on:
   push:
 jobs:
   print:
-    runs-on: ubuntu-latest
+    runs-on: ${{matrix.os}}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+        node-version: [18.x,20.x,22.x,24.x]
     steps:
       - name: Setup
         uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{matrix.node-version}}
       - name: Print name
         run: echo "Hello There, I am Raghav"
       - name: Install Dependencies
         run: npm ci
-      - name: Print name
+      - name: Running actual Tests
         run: npm test
