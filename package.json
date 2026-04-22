@@ -1,0 +1,23 @@
+{
+  "name": "test-repo",
+  "version": "1.0.0",
+  "description": "this is a root directory README.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raghav581/github-actions-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raghav581/github-actions-testing/issues"
+  },
+  "homepage": "https://github.com/raghav581/github-actions-testing#readme",
+  "dependencies": {
+    "jest": "^30.3.0"
+  }
+}
