@@ -8,5 +8,7 @@ jobs:
       run:
         working-directory: testingfolder
     steps:
+      - name: Setup
+        uses: actions/checkout@v4
       - name: Print name
         run: echo "Hello There, I am Raghav"
