@@ -4,9 +4,6 @@ on:
 jobs:
   print:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: testingfolder
     steps:
       - name: Setup
         uses: actions/checkout@v4
