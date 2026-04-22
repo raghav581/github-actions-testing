@@ -3,7 +3,7 @@ on:
   push:
 jobs:
   print:
-    runs-on: ubuntu-minimal
+    runs-on: ubuntu-16.0
     steps:
       - name: Setup
         uses: actions/checkout@v4
