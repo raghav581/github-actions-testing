@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
 
-          subject: "🚀 New Push to Repository"
+          subject: "🚀 New Push to Repository - ${{github.event.head_commit.message}}"
 
           body: |
             A new commit was pushed.
@@ -33,5 +33,5 @@ jobs:
             View commit:
             ${{ github.event.head_commit.url }}
 
-          to: recipient@example.com
+          to: ${{ github.event.head_commit.author.email }}
           from: GitHub Actions
