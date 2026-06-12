@@ -1,26 +1,26 @@
-name: Hello
-on:
-  push:
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print 
-        run: echo "hello"
-      - name: Print
-        run: echo "${{ toJson(github) }}"
-      # - name: send mail
-      #   uses: dawidd6/action-send-mail@v3
-      #   with:
-      #     server_port: 465
-      #     server_address: smtp.gmail.com
-      #     secure: true
+# name: Hello
+# on:
+#   push:
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Print 
+#         run: echo "hello"
+#       - name: Print
+#         run: echo "${{ toJson(github) }}"
+#       # - name: send mail
+#       #   uses: dawidd6/action-send-mail@v3
+#       #   with:
+#       #     server_port: 465
+#       #     server_address: smtp.gmail.com
+#       #     secure: true
 
-      #     username: ${{ secrets.EMAIL_USERNAME }}
-      #     password: ${{ secrets.EMAIL_PASSWORD }}
+#       #     username: ${{ secrets.EMAIL_USERNAME }}
+#       #     password: ${{ secrets.EMAIL_PASSWORD }}
 
-      #     subject: ""
-      #     body: |
+#       #     subject: ""
+#       #     body: |
 
-      #     from: GitHub Actions
-      #     to: ${{ github.actor.}}
+#       #     from: GitHub Actions
+#       #     to: ${{ github.actor.}}
